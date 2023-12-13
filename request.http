@@ -1,0 +1,33 @@
+### get all Tasks
+GET http://localhost:3000/task
+
+### get a single Tasks
+GET http://localhost:3000/task/640d1560-d9f8-4ad0-a109-94c14978fa5c
+
+
+### get a create a new task 
+POST http://localhost:3000/task
+content-type: application/json
+
+{
+     "categoryId": "52c95eb1-0188-40a9-b1a8-70e36abf122d",
+     "title": "theGym",
+     "description": " i have to code"
+}
+
+### delete all Tasks
+DELETE  http://localhost:3000/640d1560-d9f8-4ad0-a109-94c14978fa5c
+
+
+### get all categories
+GET http://localhost:3000/category
+
+
+
+### create category
+POST  http://localhost:3000/category
+
+Content-Type: application/json
+{
+     "name": "bowiling"
+}
